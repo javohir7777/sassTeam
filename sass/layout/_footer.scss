@@ -1,0 +1,47 @@
+@use "../layout/flex" as flx;
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+footer {
+  margin-top: 84px;
+  padding: 100px 0 134px;
+  @include flx.flex(center, space-between, 0);
+  .footer-brand {
+    .footer-brand__p {
+      width: 300px;
+      padding: 40px 0 64px;
+      @include mxn.font("Open Sans", 16px, 400, 28px, left, var.$text-grey);
+    }
+    .footer-bottom__p {
+      @include mxn.font("Open Sans", 16px, 400, 28px, left, var.$text-grey);
+    }
+  }
+  .footer-menus {
+    @include flx.flex(center, center, 88px);
+    .footer-menu {
+      .footer-menu__item {
+        padding-bottom: 32px;
+        span {
+          @include mxn.font("Open Sans", 20px, 700, 32px, left, var.$bg-dark);
+        }
+        .footer-menu__link {
+          // @include flx.flex(center, center, 5px);
+          @include mxn.font("Open Sans", 20px, 400, 32px, left, var.$text-grey);
+          .footer-link__span {
+            padding: 1px 14px;
+            background-color: var.$bg-green;
+            border-radius: 120px;
+            @include mxn.font(
+              "Open Sans",
+              13px,
+              700,
+              28px,
+              center,
+              var.$bg-dark
+            );
+          }
+        }
+      }
+    }
+  }
+}
