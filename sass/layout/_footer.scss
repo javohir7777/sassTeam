@@ -3,6 +3,10 @@
 @use "../utils/variables" as var;
 
 footer {
+  @media (max-width: 785px) {
+   display: flex;
+   flex-direction: column;
+  }
   margin-top: 84px;
   padding: 100px 0 134px;
   @include flx.flex(center, space-between, 0);
@@ -17,6 +21,11 @@ footer {
     }
   }
   .footer-menus {
+      @media (max-width: 545px) {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    
+  }
     @include flx.flex(center, center, 88px);
     .footer-menu {
       .footer-menu__item {

@@ -1,0 +1,212 @@
+@use "../utils/_mixin" as mxn;
+@use "../layout/flex" as flx;
+@use "../utils/_variables.scss" as var;
+.we-love_page {
+  padding: 72px 0 166px;
+  @include flx.flex(center, center, 0);
+  flex-direction: column;
+  background-color: var.$bg-dark;
+  p {
+    @include mxn.font(Open Sans, 20px, 400, 32px, center, var.$text-white);
+  }
+  h1 {
+    padding: 12px 0 17px;
+    max-width: 842px;
+    @include mxn.font(Manrope, 64px, 400, 84px, center, var.$text-white);
+  }
+  dd {
+    max-width: 745.37px;
+    @include mxn.font(Open Sans, 16px, 400, 28px, center, var.$text-white);
+  }
+}
+.man_fotos {
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 770px) {
+    justify-content: center;
+    align-items: start;
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+  margin-top: -100px;
+  display: grid;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+
+  grid-template-columns: repeat(3, 1fr);
+  p {
+    img {
+      width: 100%;
+    }
+
+    display: grid;
+
+    justify-content: center;
+  }
+}
+.our-story_text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 96px;
+
+  p {
+    max-width: 842px;
+    @include mxn.font(Open Sans, 20px, 400, 32px, left, var.$text-grey);
+  }
+  dd {
+    padding: 12px 0 32px;
+    max-width: 842px;
+    @include mxn.font(Open Sans, 48px, 400, 72px, left, var.$bg-dark);
+  }
+  main {
+    max-width: 842px;
+    @include mxn.font(Open Sans, 20px, 400, 32px, left, var.$text-grey);
+  }
+}
+.our-number {
+  display: grid;
+  align-items: center;
+  background-color: var.$bg-dark;
+  padding: 96px 0;
+  p {
+    @include mxn.font(Open Sans, 24px, 400, 36px, center, var.$text-white);
+  }
+  h1 {
+    padding: 12px 0 82px;
+    max-width: 842px;
+    @include mxn.font(Open Sans, 48px, 400, 72px, center, var.$text-white);
+  }
+  main {
+    @media (max-width: 770px) {
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    h2 {
+      padding-bottom: 32px;
+      @media (max-width: 350px) {
+        font-size: 70px;
+      }
+      @include mxn.font(Open Sans, 96px, 400, 56px, center, var.$bg-green);
+    }
+    p {
+      @include mxn.font(Open Sans, 24px, 400, 36px, center, var.$text-white);
+    }
+  }
+}
+.cards {
+  @media (max-width: 740px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  img {
+    width: 100%;
+  }
+  dd {
+    padding: 24px 0 12px;
+    @include mxn.font(Open Sans, 28px, 400, 48px, left, var.$bg-dark);
+  }
+  p {
+    @include mxn.font(Open Sans, 20px, 400, 32px, left, var.$text-grey);
+  }
+}
+.our-values_text {
+  background-color: var.$bg-dark;
+  padding: 120px 0;
+  .value-text_element {
+    display: grid;
+    justify-content: center;
+  }
+  p {
+    @include mxn.font(Open Sans, 20px, 400, 32px, left, var.$text-white);
+  }
+  main {
+    padding: 12px 0 22px;
+    @include mxn.font(Manrope, 48px, 400, 72px, left, var.$text-white);
+  }
+  dd {
+    max-width: 799px;
+    @include mxn.font(Open Sans, 20px, 400, 32px, left, var.$text-white);
+  }
+  .we_commit {
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
+    padding-top: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    .box {
+      dd {
+        @include mxn.font(Open Sans, 28px, 400, 48px, left, var.$text-white);
+      }
+
+      main {
+        max-width: 603px;
+        @include mxn.font(Open Sans, 20px, 400, 32px, left, var.$text-white);
+      }
+    }
+  }
+}
+.cards {
+  padding-bottom: 120px;
+}
+.email {
+  border-radius: 12px;
+  margin-top: 124px;
+  padding: 72px 242px;
+  background-color: var.$bg-dark;
+  @media (max-width: 1000px) {
+      padding: 52px 42px;
+      text-align: center;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 50px;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+  }
+  h1 {
+    max-width: 716px;
+    @include mxn.font(Manrope, 48px, 400, 72px, center, var.$text-white);
+  }
+  input {
+    @media(max-width: 415px){
+      padding: 12px 32px;
+    }
+    border-radius: 56px;
+    border: none;
+    padding: 12px 158px 12px 32px;
+  }
+  button {
+    @include mxn.font(Manrope, 20px, 800, 28px, center, var.$bg-dark);
+
+    border: none;
+    border-radius: 56px;
+    padding: 9px 56px;
+    background-color: var.$bg-green;
+  }
+}

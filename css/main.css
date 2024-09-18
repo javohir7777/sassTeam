@@ -128,6 +128,12 @@ footer {
   justify-content: space-between;
   gap: 0;
 }
+@media (max-width: 785px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer .footer-brand .footer-brand__p {
   width: 300px;
   padding: 40px 0 64px;
@@ -151,6 +157,12 @@ footer .footer-menus {
   align-items: center;
   justify-content: center;
   gap: 88px;
+}
+@media (max-width: 545px) {
+  footer .footer-menus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 footer .footer-menus .footer-menu .footer-menu__item {
   padding-bottom: 32px;
@@ -181,4 +193,331 @@ footer .footer-menus .footer-menu .footer-menu__item .footer-menu__link .footer-
   line-height: 28px;
   text-align: center;
   color: rgb(10, 38, 64);
+}
+
+.we-love_page {
+  padding: 72px 0 166px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgb(10, 38, 64);
+}
+.we-love_page p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.we-love_page h1 {
+  padding: 12px 0 17px;
+  max-width: 842px;
+  font-family: Manrope;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 84px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.we-love_page dd {
+  max-width: 745.37px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.man_fotos {
+  margin-top: -100px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1200px) {
+  .man_fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 770px) {
+  .man_fotos {
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.man_fotos img {
+  width: 100%;
+}
+.man_fotos p {
+  display: grid;
+  justify-content: center;
+}
+.man_fotos p img {
+  width: 100%;
+}
+
+.our-story_text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 96px;
+}
+.our-story_text p {
+  max-width: 842px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(119, 119, 119);
+}
+.our-story_text dd {
+  padding: 12px 0 32px;
+  max-width: 842px;
+  font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+  color: rgb(10, 38, 64);
+}
+.our-story_text main {
+  max-width: 842px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(119, 119, 119);
+}
+
+.our-number {
+  display: grid;
+  align-items: center;
+  background-color: rgb(10, 38, 64);
+  padding: 96px 0;
+}
+.our-number p {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.our-number h1 {
+  padding: 12px 0 82px;
+  max-width: 842px;
+  font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.our-number main {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+@media (max-width: 770px) {
+  .our-number main {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .our-number main {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+.our-number main h2 {
+  padding-bottom: 32px;
+  font-family: Open Sans;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  color: rgb(101, 228, 163);
+}
+@media (max-width: 350px) {
+  .our-number main h2 {
+    font-size: 70px;
+  }
+}
+.our-number main p {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.cards {
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 740px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card img {
+  width: 100%;
+}
+.card dd {
+  padding: 24px 0 12px;
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: rgb(10, 38, 64);
+}
+.card p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(119, 119, 119);
+}
+
+.our-values_text {
+  background-color: rgb(10, 38, 64);
+  padding: 120px 0;
+}
+.our-values_text .value-text_element {
+  display: grid;
+  justify-content: center;
+}
+.our-values_text p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.our-values_text main {
+  padding: 12px 0 22px;
+  font-family: Manrope;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.our-values_text dd {
+  max-width: 799px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.our-values_text .we_commit {
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 500px) {
+  .our-values_text .we_commit {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.our-values_text .we_commit .box dd {
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.our-values_text .we_commit .box main {
+  max-width: 603px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.cards {
+  padding-bottom: 120px;
+}
+
+.email {
+  border-radius: 12px;
+  margin-top: 124px;
+  padding: 72px 242px;
+  background-color: rgb(10, 38, 64);
+}
+@media (max-width: 1000px) {
+  .email {
+    padding: 52px 42px;
+    text-align: center;
+  }
+}
+.email form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 50px;
+}
+@media (max-width: 1100px) {
+  .email form {
+    flex-direction: column;
+  }
+}
+.email h1 {
+  max-width: 716px;
+  font-family: Manrope;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.email input {
+  border-radius: 56px;
+  border: none;
+  padding: 12px 158px 12px 32px;
+}
+@media (max-width: 415px) {
+  .email input {
+    padding: 12px 32px;
+  }
+}
+.email button {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(10, 38, 64);
+  border: none;
+  border-radius: 56px;
+  padding: 9px 56px;
+  background-color: rgb(101, 228, 163);
 }
