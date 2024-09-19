@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>About</title>
     <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/about.min.css">
 
     <link
       rel="stylesheet"
@@ -12,11 +13,14 @@
     />
   </head>
   <body>
-    <header>
+    <header id="navbar">
       <div class="container">
         <nav>
           <div class="nav-brand">
             <img src="../images/header/brandLogo.svg" alt="brand-logo?" />
+              <div id="mode-btn">
+              <img class="mode_btn_image" src="../image/moon.svg" alt="" />
+            </div>
             <span class="material-symbols-outlined hamburger" id="menu-toggle">
               menu
             </span>
@@ -24,7 +28,7 @@
           <div class="nav-menus" id="nav-menus">
             <ul class="nav-menu">
               <li class="nav-menu__item">
-                <a href="#" class="nav-menu__link">Product</a>
+                <a href="../index.html" class="nav-menu__link">Home</a>
               </li>
               <li class="nav-menu__item">
                 <a href="#" class="nav-menu__link">Services</a>
@@ -227,7 +231,7 @@
         </div>
       </footer>
     </div>
-
+<script src="../js/about.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

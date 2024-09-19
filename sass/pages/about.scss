@@ -1,6 +1,22 @@
 @use "../utils/_mixin" as mxn;
 @use "../layout/flex" as flx;
 @use "../utils/_variables.scss" as var;
+header {
+  position: sticky;
+  top: 0;
+  background: #0a2640;
+  padding: 24px 0;
+  z-index: 1;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px !important;
+  @media(max-width: 706px){
+    gap: 0 !important;
+  }
+}
 .we-love_page {
   padding: 72px 0 166px;
   @include flx.flex(center, center, 0);
@@ -176,8 +192,8 @@
   padding: 72px 242px;
   background-color: var.$bg-dark;
   @media (max-width: 1000px) {
-      padding: 52px 42px;
-      text-align: center;
+    padding: 52px 42px;
+    text-align: center;
   }
   form {
     display: flex;
@@ -194,7 +210,7 @@
     @include mxn.font(Manrope, 48px, 400, 72px, center, var.$text-white);
   }
   input {
-    @media(max-width: 415px){
+    @media (max-width: 415px) {
       padding: 12px 32px;
     }
     border-radius: 56px;

@@ -3,8 +3,23 @@
 @use "../utils/mixin" as mxn;
 
 header {
-  background-color: var.$bg-dark;
-  padding: 56px 0;
+  position: sticky;
+  top: 0;
+  background: #0a2640;
+  padding: 24px 0;
+  z-index: 1;
+}
+.mode_btn_image {
+  width: 48px;
+  height: 48px;
+}
+
+.navbar-shrink {
+  background: rgba(183, 11, 236, 0.5);
+}
+header {
+  background-color: #0a2640;
+  padding: 30px 0;
   nav {
     @include flx.flex(center, space-between, 0);
     @media (max-width: 650px) {
