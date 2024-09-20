@@ -212,12 +212,28 @@ footer .footer-menus .footer-menu .footer-menu__item .footer-menu__link .footer-
   color: rgb(10, 38, 64);
 }
 
+.dark, bg, Handshake {
+  filter: grayscale(90%);
+}
+
 header {
-  position: sticky !important;
-  top: 0 !important;
+  position: sticky;
+  top: 0;
   background: #0a2640;
   padding: 24px 0;
-  z-index: 1 !important;
+  z-index: 1;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px !important;
+}
+@media (max-width: 706px) {
+  .nav-brand {
+    gap: 0 !important;
+  }
 }
 
 .we-love_page {
