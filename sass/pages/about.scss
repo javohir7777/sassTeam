@@ -1,6 +1,10 @@
 @use "../utils/_mixin" as mxn;
 @use "../layout/flex" as flx;
 @use "../utils/_variables.scss" as var;
+.dark, bg,Handshake {
+   -webkit-filter: grayscale(90%); 
+  filter: grayscale(90%);
+}
 header {
   position: sticky;
   top: 0;

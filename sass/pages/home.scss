@@ -314,10 +314,11 @@ header {
   background: rgba(183, 11, 236, 0.5);
 }
 
-.dark .bg {
-  background-color: #99f86a;
+.dark, bg,Handshake {
+   -webkit-filter: grayscale(90%); 
+  filter: grayscale(90%);
 }
-
+ 
 .img_logo_bg,
 .image_section {
   img {

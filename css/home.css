@@ -343,8 +343,8 @@ header {
   background: rgba(183, 11, 236, 0.5);
 }
 
-.dark .bg {
-  background-color: #99f86a;
+.dark, bg, Handshake {
+  filter: grayscale(90%);
 }
 
 .img_logo_bg img,
